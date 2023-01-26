@@ -2,13 +2,11 @@ import Image from "next/image"
 import { SocialIcon } from "react-social-icons"
 
 import me from "@assets/images/igor.jpg"
-import { WelcomeType } from "@customTypes/welcomeType"
 import { Text } from "@lib/Text/Text"
-
 
 import s from "./Welcome.module.scss"
 
-export const Welcome: React.FC<WelcomeType> = (): JSX.Element => {
+export const Welcome: React.FC = (): JSX.Element => {
 
     return (
         <header className={s.wrapper} id="welcome">
