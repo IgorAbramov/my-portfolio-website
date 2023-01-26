@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,9 +14,23 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "sourceMap": true,
+    "outDir": "dist",
     "baseUrl": ".",
+    "useUnknownInCatchVariables": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
     "paths": {
-      "@/*": ["./src/*"]
+      "@db/*": ["db/*"],
+      "@assets/*": ["src/assets/*"],
+      "@atoms/*": ["src/atoms/*"],
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@lib/*": ["src/lib/*"],
+      "@service/*": ["src/service/*"],
+      "@customTypes/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

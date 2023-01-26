@@ -1,0 +1,70 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.h1 {
+  @include heading-h1();
+}
+
+.h2 {
+  @include heading-h2();
+}
+
+.h3 {
+  @include heading-h3();
+}
+
+.paragraph {
+  @include text-paragraph();
+}
+
+.paragraph-lg {
+  @include text-paragraph-large();
+}
+
+.label {
+  @include text-label();
+}
+
+.c_brand {
+  color: $color-brand;
+}
+
+.c_white {
+  color: $color-white;
+}
+
+.c_brandish {
+  color: $color-brandish;
+}
+
+.c_grey {
+  color: $color-grey;
+}
+
+.c_black {
+  color: $color-black;
+}
+
+.c_brand_dark {
+  color: $color-brand-dark;
+}
+
+.c_brand_darker {
+  color: $color-brand-darker;
+}
+
+.c_accent {
+  color: $color-accent;
+}
+
+.c_brown {
+  color: $color-brown;
+}
+
+.c_greyish {
+  color: $color-greyish;
+}
+
+.bold {
+  font-weight: bold;
+}

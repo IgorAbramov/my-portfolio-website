@@ -1,0 +1,92 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-width: $screen-max-width;
+
+  @include breakpoint-max($bp-screen-smd) {
+    flex-direction: column-reverse;
+  }
+}
+
+.welcomeData {
+  width: 400px;
+
+  @include breakpoint-max($bp-screen-smd) {
+    width: 85vw;
+  }
+}
+
+.portrait {
+  height: 400px;
+  width: 400px;
+  border-radius: 35px;
+  @include breakpoint-max($bp-screen-smd) {
+    width: 85vw;
+    height: auto;
+  }
+}
+
+.socialsAndResume {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+
+  @include breakpoint-max($bp-screen-smd) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @include breakpoint-max(475px) {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include breakpoint-max($bp-screen-smd) {
+    flex-direction: row;
+  }
+
+  .icon:hover {
+    svg {
+      background: $color-black;
+      filter: invert(100%) contrast(150%) hue-rotate(25deg) brightness(160%);
+    }
+  }
+}
+.socialsSvgMask {
+  path {
+    fill: $color-grey;
+  }
+}
+
+.downloadResumeButton {
+  max-width: 70px;
+  text-decoration: none;
+  border-radius: 35px;
+  background: $color-accent;
+  padding: 14px 25px;
+  transform: rotate(90deg) translateY(35px);
+  color: $color-white;
+  letter-spacing: 0.05em;
+
+  @include breakpoint-max($bp-screen-smd) {
+    transform: none;
+  }
+
+  @include breakpoint-max(475px) {
+    border-radius: 20px;
+  }
+
+  &:hover {
+    background: $color-brand-darker;
+  }
+}

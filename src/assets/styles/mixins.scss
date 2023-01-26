@@ -1,0 +1,87 @@
+@import "constants";
+
+@mixin breakpoint-max($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max-vertical($bp) {
+  @media screen and (max-height: $bp) {
+    @content;
+  }
+}
+
+@mixin heading-h1() {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  text-transform: uppercase;
+  @include breakpoint-max($bp-screen-md) {
+    font-size: 30px;
+  }
+}
+
+@mixin heading-h2() {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  @include breakpoint-max($bp-screen-md) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin heading-h3() {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  @include breakpoint-max($bp-screen-md) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin text-paragraph-large() {
+
+  -webkit-box-orient: vertical;
+
+  display: -webkit-box;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  line-height: 140%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include breakpoint-max($bp-screen-md) {
+  }
+
+  @include breakpoint-max($bp-screen-smd) {
+    font-size: 18px;
+  }
+}
+
+@mixin text-paragraph() {
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+
+  @include breakpoint-max($bp-screen-md) {
+
+  }
+}
+
+@mixin text-label() {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  white-space: pre-wrap;
+}
