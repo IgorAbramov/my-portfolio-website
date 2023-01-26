@@ -32,7 +32,7 @@
 .socialsAndResume {
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 57px;
 
   @include breakpoint-max($bp-screen-smd) {
     flex-direction: row;
