@@ -13,7 +13,7 @@ export const Welcome: React.FC = (): JSX.Element => {
             <div className={s.welcomeData}>
                 <Image alt="portrait" className={s.portrait} src={me}></Image>
                 <Text color="brand" component="h1" variant="h1">Hi. I&apos;m Igor.</Text>
-                <Text color="white" component="p" variant="paragraph">A Software Engineer mainly focusing on Backend but with Frontend and Blockchain skills</Text>
+                <Text color="white" component="p" variant="paragraph">A Software Engineer mainly focusing on Backend but with Frontend and Blockchain experience.</Text>
             </div>
             <div className={s.socialsAndResume}>
                 <div className={s.socials}>
